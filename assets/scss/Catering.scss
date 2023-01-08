@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
+
+// body {
+
+// }
 
 hr {
     border: 0;
@@ -99,9 +104,11 @@ hr {
 }
 
 .About {
+    padding: 64px 0px;
+
     .container {
         max-width: 1100px;
-        margin: 64px auto;
+        margin: 0px auto;
 
         .layout-1 {
             display: grid;

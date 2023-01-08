@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App-header .container-fluid {
+  padding: 8px 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+.App-header .container-fluid .row {
+  display: flex;
+  justify-content: space-between;
+}
+.App-header .container-fluid .row .col:first-child {
+  align-self: center;
+}
+.App-header .container-fluid .row .col:first-child a {
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  letter-spacing: 5px;
+}
+.App-header .container-fluid .row .col:first-child a span {
+  font-weight: bold;
+}
+.App-header .container-fluid .row .col:first-child a:hover {
+  background-color: #ccc;
+}
+.App-header .container-fluid .row .col .App-header__about-list {
+  display: flex;
+  list-style-type: none;
+}
+.App-header .container-fluid .row .col .App-header__about-list a {
+  text-decoration: none;
+  color: #000000;
+}
+.App-header .container-fluid .row .col .App-header__about-list a li {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px 16px;
+  letter-spacing: 5px;
+}
+.App-header .container-fluid .row .col .App-header__about-list a li:hover {
+  background-color: #ccc;
+}
+.App-header .App-header__background-img {
+  background: url("../images/architect/architect.jpg") center/cover no-repeat;
+  height: 800px;
+  max-width: 1500px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App-header .App-header__background-img .background-img__title {
+  font-size: 36px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  letter-spacing: 4px;
+}
+.App-header .App-header__background-img .background-img__title span:first-child {
+  padding: 8px 16px;
+  background-color: #2d2f30;
+  opacity: 0.75;
+}
+.App-header .App-header__background-img .background-img__title span:last-child {
+  font-weight: 400;
+}
+
+.Project {
+  padding: 8px 16px;
+}
+.Project .container .block {
+  padding: 32px 16px;
+  margin-left: -16px;
+}
+.Project .container .block .Project__title {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 16px 0px;
+  margin: 10px 0px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.Project .container .layout-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-areas: "h1 h2 h3 h4" "h5 h6 h7 h8";
+  grid-gap: 16px;
+}
+.Project .container .layout-1 .layout-1__item {
+  position: relative;
+}
+.Project .container .layout-1 .layout-1__item:first-child {
+  grid-area: h1;
+}
+.Project .container .layout-1 .layout-1__item:nth-child(2) {
+  grid-area: h2;
+}
+.Project .container .layout-1 .layout-1__item:nth-child(3) {
+  grid-area: h3;
+}
+.Project .container .layout-1 .layout-1__item:nth-child(4) {
+  grid-area: h4;
+}
+.Project .container .layout-1 .layout-1__item:nth-child(5) {
+  grid-area: h5;
+}
+.Project .container .layout-1 .layout-1__item:nth-child(6) {
+  grid-area: h6;
+}
+.Project .container .layout-1 .layout-1__item:nth-child(7) {
+  grid-area: h7;
+}
+.Project .container .layout-1 .layout-1__item:last-child {
+  grid-area: h8;
+}
+.Project .container .layout-1 .layout-1__item .layout-1__img {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Project .container .layout-1 .layout-1__item p {
+  position: absolute;
+  top: 0;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 8px 16px;
+  background-color: #000000;
+}
+.Project .container .layout-1 .layout-1__item .yellow {
+  display: flex;
+  position: absolute;
+  top: 0;
+  background-color: rgb(234, 234, 194);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.Project .container .layout-1 .layout-1__item .yellow:hover {
+  opacity: 0.5;
+}
+.Project .container .layout-1 .layout-1__item .yellow .yellow__icon {
+  height: 34px;
+  width: 34px;
+  margin: auto;
+}
+
+.About {
+  padding: 8px 32px;
+}
+.About .container .About__title {
+  padding-top: 32px;
+}
+.About .container .About__title h1 {
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  padding: 16px 0px;
+  margin: 10px 0px;
+}
+.About .container .About__description {
+  margin-top: 15px;
+  margin-bottom: 47px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+.About .container .layout-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-areas: "h1 h2 h3 h4";
+  grid-column-gap: 16px;
+  filter: grayscale(75%);
+}
+.About .container .layout-2 .layout-2__item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.About .container .layout-2 .layout-2__item:first-child {
+  grid-area: h1;
+}
+.About .container .layout-2 .layout-2__item:nth-child(2) {
+  grid-area: h2;
+}
+.About .container .layout-2 .layout-2__item:nth-child(3) {
+  grid-area: h3;
+}
+.About .container .layout-2 .layout-2__item:last-child {
+  grid-area: h4;
+}
+.About .container .layout-2 .layout-2__item .layout-2__img {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.About .container .layout-2 .layout-2__item .layout-2__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.About .container .layout-2 .layout-2__item .layout-2__detail .detail__one .detail__name {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0px;
+}
+.About .container .layout-2 .layout-2__item .layout-2__detail .detail__one .detail__position {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0.6;
+  margin: 15px 0px;
+}
+.About .container .layout-2 .layout-2__item .layout-2__detail .detail__one .detail__desc {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px 0px;
+}
+.About .container .layout-2 .layout-2__item .layout-2__detail .detail__two .detail__btn {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  border: none;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+}
+.About .container .layout-2 .layout-2__item .layout-2__detail .detail__two .detail__btn:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.contact {
+  padding: 8px 32px 8px 32px;
+}
+.contact .container .Contact__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 16px 0px;
+  margin: 10px 0px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.contact .container .contact__subtitle {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px 0px;
+}
+.contact .container .contact__get-data input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.contact .container .contact__get-data .contact__send-btn {
+  padding: 8px 16px;
+  background-color: #000000;
+  color: white;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  margin: 16px 0px;
+  border: none;
+}
+.contact .container .contact__get-data .contact__send-btn:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: #000000;
+}
+.contact .contact__map {
+  margin-top: 32px;
+  background: url("../images/architect/map.jpg") center/cover no-repeat;
+  height: 820px;
+}
+
+.footer-app {
+  padding: 16px 0px;
+  text-align: center;
+  background-color: #000000;
+}
+.footer-app p {
+  margin: 15px 0px;
+  color: white;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-app p a {
+  color: inherit;
+  font-family: inherit;
+}
+.footer-app p a:hover {
+  cursor: pointer;
+  color: rgb(110, 204, 110);
+}/*# sourceMappingURL=Architect.css.map */

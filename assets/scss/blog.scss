@@ -1,0 +1,443 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #f1f1f1;
+}
+
+.content {
+    // background-color: #f1f1f1 !important;
+
+
+    .container {
+        max-width: 1400px;
+        margin: 0px auto;
+
+        .content__header {
+            padding: 32px 16px;
+
+            .header__title {
+                font-size: 36px;
+                font-family: sans-serif;
+                line-height: 1.5;
+                font-weight: 400;
+
+                text-align: center;
+                margin: 10px 0px;
+            }
+
+            .header__subtitle {
+                font-family: "Raleway", sans-serif;
+                font-size: 15px;
+                line-height: 1.5;
+                text-align: center;
+
+                margin: 15px 0px;
+
+                span {
+                    background-color: #000;
+                    color: white;
+                    display: inline-block;
+
+                    padding: 0px 8px;
+                }
+            }
+        }
+
+        .content__card {
+            .row {
+                display: flex;
+
+                .col {
+
+                    &:last-child {
+                        padding: 16px;
+                        max-width: 33.33%;
+                    }
+
+                    &:first-child {
+                        max-width: 66.66%;
+                        padding: 16px;
+                    }
+
+                    .content__card--large {
+                        .card-large-one {
+                            background-color: white;
+                            margin-bottom: 30px;
+                            box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+
+                            .card__img-nature {
+                                width: 100%;
+                                height: auto;
+                                object-fit: cover;
+                            }
+
+                            .card__title {
+                                font-family: "Raleway", sans-serif;
+                                font-size: 24px;
+                                font-weight: 400;
+                                line-height: 1.5;
+
+                                padding: 0px 16px;
+                                margin: 10px 0px;
+                                margin-bottom: 25px;
+                            }
+
+                            .card__subtitle {
+                                font-size: 18px;
+                                font-family: sans-serif;
+                                line-height: 1.5;
+
+                                padding: 0px 16px;
+                                margin: 10px 0px;
+
+                                span {
+                                    opacity: 0.65;
+                                }
+                            }
+
+                            .card__description {
+                                font-size: 15px;
+                                font-family: sans-serif;
+                                line-height: 1.5;
+
+                                padding: 0px 16px;
+                                margin: 15px 0px;
+                            }
+
+                            .view {
+                                padding: 0px 16px;
+                                padding-bottom: 16px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                margin: 30px 0px;
+
+                                .view__btn {
+                                    padding: 12px 24px;
+                                    font-family: Arial, Helvetica, sans-serif;
+
+                                    background-color: white;
+                                    border: 1px solid #ccc;
+
+                                    &:hover {
+                                        background-color: #ccc;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .comment {
+                                    font-weight: bolder;
+                                    font-size: 15px;
+                                    font-family: sans-serif;
+
+                                    padding: 12px 24px;
+
+                                    span {
+                                        font-size: 15px;
+                                        line-height: 1.5;
+                                        background-color: #000;
+                                        color: #fff;
+                                        display: inline-block;
+                                        padding-left: 8px;
+                                        padding-right: 8px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+
+                        .card-large-two {
+                            background-color: white;
+                            box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+
+                            .card__img-nature {
+                                width: 100%;
+                                height: auto;
+                                object-fit: cover;
+                            }
+
+                            .card__title {
+                                font-family: "Raleway", sans-serif;
+                                font-size: 24px;
+                                font-weight: 400;
+                                line-height: 1.5;
+
+                                padding: 0px 16px;
+                                margin: 10px 0px;
+                            }
+
+                            .card__subtitle {
+                                font-size: 18px;
+                                font-family: sans-serif;
+                                line-height: 1.5;
+
+                                padding: 0px 16px;
+                                margin: 10px 0px;
+                                margin-bottom: 25px;
+
+                                span {
+                                    opacity: 0.65;
+                                }
+                            }
+
+                            .card__description {
+                                font-size: 15px;
+                                font-family: sans-serif;
+                                line-height: 1.5;
+
+                                padding: 0px 16px;
+                                margin: 15px 0px;
+                            }
+
+                            .view {
+                                padding: 0px 16px;
+                                padding-bottom: 16px;
+
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                margin: 30px 0px;
+
+                                .view__btn {
+                                    padding: 12px 24px;
+                                    font-family: Arial, Helvetica, sans-serif;
+
+                                    background-color: white;
+                                    border: 1px solid #ccc;
+
+                                    &:hover {
+                                        background-color: #ccc;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .comment {
+                                    font-weight: bolder;
+                                    font-size: 15px;
+                                    font-family: sans-serif;
+
+                                    padding: 12px 24px;
+
+                                    span {
+                                        font-size: 15px;
+                                        line-height: 1.5;
+                                        background-color: #000;
+                                        color: #fff;
+                                        display: inline-block;
+                                        padding-left: 8px;
+                                        padding-right: 8px;
+                                        text-align: center;
+
+                                        border-radius: 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content__card--small {
+
+                    .card-small-one {
+                        background-color: white;
+                        box-shadow: 0px 4px 8px rgb(0 0 0 / 19%);
+
+                        .card__img-girl {
+                            width: 100%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+
+                        .card__title {
+                            font-size: 20px;
+                            font-family: sans-serif;
+                            font-weight: 500;
+                            line-height: 1.5;
+
+                            margin: 10px 0px;
+                            padding: 0px 16px;
+                        }
+
+                        .card__description {
+                            font-size: 15px;
+                            font-family: sans-serif;
+                            line-height: 1.5;
+
+                            padding: 0px 16px;
+                            padding-bottom: 15px;
+                            margin: 15px 0px;
+                        }
+                    }
+
+                    .card-small-two {
+                        margin-top: 41px;
+                        background-color: white;
+                        box-shadow: 0 4px 12px rgb(0 0 0 / 19%);
+
+                        .post__title {
+                            font-size: 20px;
+                            font-family: sans-serif;
+                            line-height: 1.5;
+                            font-weight: 400;
+
+                            padding: 16px;
+                            background-color: #f1f1f1;
+                        }
+
+                        .post-list {
+                            .post__item {
+                                display: flex;
+                                width: 100%;
+                                padding: 16px;
+                                background-color: white;
+
+                                &:hover {
+                                    background-color: #ccc;
+                                }
+
+                                .img__post {
+                                    width: 50px;
+                                    height: 50px;
+                                    object-fit: cover;
+
+                                    margin-right: 16px;
+                                }
+
+                                .post__text {
+                                    width: 100%;
+
+                                    .post__title {
+                                        padding: 0px;
+                                        background-color: inherit;
+
+                                        font-size: 18px;
+                                        font-family: sans-serif;
+                                        line-height: 1.5;
+                                    }
+
+                                    .post__subtitle {
+                                        font-size: 15px;
+                                        font-family: sans-serif;
+                                        line-height: 1.5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .card-small-three {
+                        margin-top: 41px;
+                        box-shadow: 0px 4px 12px rgb(0 0 0 / 19%);
+
+                        .tags {
+                            .tags__title {
+                                font-size: 18px;
+                                font-family: sans-serif;
+                                line-height: 1.5;
+
+                                padding: 16px;
+                            }
+
+                            .tags__list {
+                                background-color: white;
+                                padding: 16px;
+                                // display: flex;
+                                // flex-wrap: wrap;
+                                // justify-content: space-between;
+
+                                span {
+                                    display: inline-block;
+                                    font-size: 15px;
+                                    font-family: sans-serif;
+                                    line-height: 1.5;
+                                    color: #000;
+
+                                    background-color: #f1f1f1;
+                                    padding: 0px 8px;
+                                    margin-bottom: 16px;
+
+                                    &:first-child {
+                                        background-color: #000;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-app {
+    .container-fluid {
+        background-color: #616161;
+        padding: 32px 16px;
+        margin-top: 16px;
+
+        .footer-app__btn {
+            margin-bottom: 16px;
+
+            .btn__previous {
+                padding: 12px 24px;
+                border: none;
+
+                color: white;
+                font-size: 15px;
+                font-family: sans-serif;
+                line-height: 1.5;
+
+                opacity: 0.3;
+                background-color: #000;
+
+                &:hover {
+                    cursor: not-allowed;
+                    background-color: #ccc;
+                    opacity: 1;
+                }
+            }
+
+            .btn__next {
+                font-size: 15px;
+                font-family: sans-serif;
+                line-height: 1.5;
+                color: white;
+
+                background-color: #000;
+                padding: 12px 24px;
+                border: none;
+
+                &:hover {
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+
+    .footer-app__text {
+        color: white;
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 15px;
+        display: inline-block;
+
+        margin: 15px 0px;
+
+        a {
+            color: inherit;
+            line-height: inherit;
+        }
+    }
+}
