@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/FoodBlog.css">
+    <title>Food blog template</title>
+</head>
+
+<body>
+    <section class="subNav-left">
+        <ul class="subNav-list">
+            <!-- Tránh reload lại page: href="javascript:void(0)" -->
+            <li><a href="javascript:void(0)" onclick="Close()">Close Menu</a></li>
+            <li><a href="#foods" onclick="Close()">Food</a></li>
+            <li><a href="#about" onclick="Close()">About</a></li>
+        </ul>
+    </section>
+    <header id="" class="food-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="food-header__more" onclick="MoreDetail()">☰</div>
+                    <p class="food-header__title">My Food</p>
+                    <p class="food-header__mail">Mail</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="foods" class="food">
+            <div class="container">
+                <div class="layout-food">
+                    <div class="food__item">
+                        <img src="./assets/images/FoodBlog/sandwich.jpg" alt="" class="food__img">
+                        <div class="food__content">
+                            <p class="food__title">The Perfect Sandwich, A Real NYC Classic</p>
+                            <p class="food__subtitle">Just some random text, lorem ipsum text praesent tincidunt ipsum
+                                lipsum.</p>
+                        </div>
+                    </div>
+                    <div class="food__item">
+                        <img src="./assets/images/FoodBlog/steak.jpg" alt="" class="food__img">
+                        <div class="food__content">
+                            <p class="food__title">Let Me Tell You About<br />This Steak</p>
+                            <p class="food__subtitle">Once again, some random text to lorem lorem lorem lorem ipsum text
+                                praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+                    <div class="food__item">
+                        <img src="./assets/images/FoodBlog/cherries.jpg" alt="" class="food__img">
+                        <div class="food__content">
+                            <p class="food__title">Cherries, interrupted</p>
+                            <p class="food__subtitle">Lorem ipsum text praesent tincidunt ipsum lipsum.<br />What else?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="food__item">
+                        <img src="./assets/images/FoodBlog/wine.jpg" alt="" class="food__img">
+                        <div class="food__content">
+                            <p class="food__title">Once Again, Robust Wine and Vegetable Pasta</p>
+                            <p class="food__subtitle">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+                    <div class="food__item">
+                        <img src="./assets/images/FoodBlog/popsicle.jpg" alt="" class="food__img">
+                        <div class="food__content">
+                            <p class="food__title">All I Need Is a Popsicle</p>
+                            <p class="food__subtitle">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+                    <div class="food__item">
+                        <img src="./assets/images/FoodBlog/salmon.jpg" alt="" class="food__img">
+                        <div class="food__content">
+                            <p class="food__title">Salmon For Your Skin</p>
+                            <p class="food__subtitle">Once again, some random text to lorem lorem lorem lorem ipsum text
+                                praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+                    <div class="food__item">
+                        <img src="./assets/images/FoodBlog/sandwich.jpg" alt="" class="food__img">
+                        <div class="food__content">
+                            <p class="food__title">The Perfect Sandwich, A Real Classic</p>
+                            <p class="food__subtitle">Just some random text, lorem ipsum text praesent tincidunt ipsum
+                                lipsum.</p>
+                        </div>
+                    </div>
+                    <div class="food__item">
+                        <img src="./assets/images/FoodBlog/croissant.jpg" alt="" class="food__img">
+                        <div class="food__content">
+                            <p class="food__title">Le French</p>
+                            <p class="food__subtitle">Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum
+                                lipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pageBottom">
+            <div class="container">
+                <ul class="list-number">
+                    <li><a href="#">«</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">»</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr id="about">
+        <section class="about">
+            <div class="container">
+                <p class="about__title">About Me, The Food Man</p>
+                <img src="./assets/images/FoodBlog/chef.jpg" alt="Chef" class="about__img">
+                <div class="about__content">
+                    <p class="content__title">I am Who I Am!</p>
+                    <p class="content__subtitle">With Passion For Real, Good Food</p>
+                    <p class="content__description">Just me, myself and I, exploring the universe of unknownment. I have
+                        a heart of love and an interest of lorem ipsum and
+                        mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut
+                        rutrum. Sed vitae justo
+                        condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt
+                        sed tellus ut rutrum.
+                        Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer class="app-footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-item">
+                    <p class="item__title">FOOTER</p>
+                    <p class="item__description">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+                        porta lectus vitae, ultricies congue gravida diam
+                        non fringilla.</p>
+                    <p class="item__license">Powered by <a href="">CHN</a></p>
+                </div>
+                <div class="footer-item">
+                    <p class="item__title">BLOG POSTS</p>
+                    <div class="list-post">
+                        <div class="post__item">
+                            <img src="./assets/images/Parallax/p1.jpg" alt="" class="post__img">
+                            <div class="post__content">
+                                <p class="content__title">Lorem</p>
+                                <p class="content__subtitle">Sed mattis nunc</p>
+                            </div>
+                        </div>
+                        <div class="post__item">
+                            <img src="./assets/images/Parallax/p2.jpg" alt="" class="post__img">
+                            <div class="post__content">
+                                <p class="content__title">Ipsum</p>
+                                <p class="content__subtitle">Praes tinci sed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <p class="item__title">POPULAR TAGS</p>
+                    <div class="tags-list">
+                        <span>Travel</span>
+                        <span>New York</span>
+                        <span>Dinner</span>
+                        <span>Salmon</span>
+                        <span>France</span>
+                        <span>Drinks</span>
+                        <span>Ideas</span>
+                        <span>Flavors</span>
+                        <span>Cuisine</span>
+                        <span>Chicken</span>
+                        <span>Dressing</span>
+                        <span>Fried</span>
+                        <span>Fish</span>
+                        <span>Duck</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    let MoreDetail = () => document.querySelector(".subNav-left").style.display = 'block';
+    let Close = () => document.querySelector(".subNav-left").style.display = 'none';
+</script>
+
+</html>

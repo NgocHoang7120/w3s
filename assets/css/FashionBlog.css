@@ -1,0 +1,539 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mg32 {
+  border: none;
+  padding-top: 40px;
+  background-color: #f1f1f1;
+}
+
+.mg25 {
+  border: none;
+  padding-top: 25px;
+  background-color: #f1f1f1;
+}
+
+.showComment {
+  display: block !important;
+}
+
+.hideComment {
+  display: none !important;
+}
+
+.app-header .container-fluid {
+  background-color: #000;
+}
+.app-header .container-fluid .row {
+  display: flex;
+  justify-content: space-between;
+}
+.app-header .container-fluid .row .col .social-list {
+  display: flex;
+  color: #fff;
+  list-style: none;
+}
+.app-header .container-fluid .row .col .social-list li {
+  padding: 8px 16px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.app-header .container-fluid .row .col .social-list li a {
+  color: inherit;
+}
+.app-header .container-fluid .row .col .search-icon {
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.app-header .container-fluid .row .col .search-icon:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: #000;
+}
+.app-header .header__content {
+  font-family: "Oswald";
+  text-align: center;
+  padding: 48px 16px;
+}
+.app-header .header__content .content__title {
+  font-size: 48px;
+  line-height: 1.5;
+}
+.app-header .header__content .content__subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+.app-header .header__content .content__subtitle span {
+  background-color: #000;
+  color: #fff;
+  padding: 0px 8px;
+}
+.app-header .header__img {
+  background: url("../images/FashionBlog/jane.jpg") center/cover no-repeat;
+  height: 1006px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.app-header .header__img .header__text {
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  margin: 10px 24px;
+}
+.app-header .header__img .header__fs {
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 64px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  margin: 10px 24px;
+}
+.app-header .header__img .header__btn {
+  font-size: 18px;
+  font-family: "Oswald";
+  line-height: 1.5;
+  border: none;
+  background-color: #fff;
+  opacity: 0.6;
+  padding: 12px 24px;
+  margin-left: 24px;
+}
+.app-header .header__img .header__btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.detail {
+  background-color: #f1f1f1;
+}
+.detail .container {
+  padding: 24px 32px;
+}
+.detail .container .layout__detail {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-areas: "d1 d1 d2";
+  background-color: #fff;
+}
+.detail .container .layout__detail .detail__item:first-child {
+  grid-area: d1;
+}
+.detail .container .layout__detail .detail__item:last-child {
+  grid-area: d2;
+  padding-left: 32px;
+  background-color: #f1f1f1;
+}
+.detail .container .layout__detail .detail__item .card__item {
+  padding: 12px 24px;
+}
+.detail .container .layout__detail .detail__item .card__item .runway__comment,
+.detail .container .layout__detail .detail__item .card__item .man-hat__comment {
+  display: none;
+}
+.detail .container .layout__detail .detail__item .card__item .card__title {
+  font-size: 24px;
+  font-family: "Oswald";
+  line-height: 1.5;
+  text-align: center;
+  margin: 10px 0px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__subtitle {
+  font-size: 18px;
+  font-family: "Oswald";
+  line-height: 1.5;
+  text-align: center;
+  margin: 10px 0px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__subtitle span {
+  opacity: 0.6;
+}
+.detail .container .layout__detail .detail__item .card__item .card__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 16px 0px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__description {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 15px 0px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__description span {
+  font-weight: 600;
+}
+.detail .container .layout__detail .detail__item .card__item .card__description span:last-child {
+  font-weight: normal;
+  margin-top: 16px;
+  display: inline-block;
+}
+.detail .container .layout__detail .detail__item .card__item .card__btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__btn .btn__like {
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 15px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__btn .btn__like:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.detail .container .layout__detail .detail__item .card__item .card__btn .btn__rep {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  padding: 8px 16px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__btn .btn__rep span {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  line-height: 1.5;
+  font-weight: normal;
+  padding: 0px 8px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__btn .btn__rep:hover {
+  background-color: #ccc;
+  cursor: pointer;
+  color: #000;
+}
+.detail .container .layout__detail .detail__item .card__item hr {
+  border: none;
+  border-top: 1px solid #f1f1f1;
+  margin: 20px 0px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__user {
+  display: flex;
+}
+.detail .container .layout__detail .detail__item .card__item .card__user:last-child .user__img {
+  margin-bottom: 16px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__user .user__img {
+  width: 90px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 62px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__user .card__content {
+  width: 100%;
+}
+.detail .container .layout__detail .detail__item .card__item .card__user .card__content .user__time {
+  font-size: 20px;
+  font-family: "Oswald";
+  line-height: 1.5;
+  margin: 10px 0px;
+}
+.detail .container .layout__detail .detail__item .card__item .card__user .card__content .user__time span {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.detail .container .layout__detail .detail__item .card__item .card__user .card__content .user__subtitle {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px 0px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__bgr {
+  background: url("../images/FashionBlog/avatar_girl2.jpg") center/cover no-repeat;
+  height: 247px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__content {
+  background-color: #000;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__content .content__title {
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 10px 16px 0px 16px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__content .content__description {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 15px 16px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__title {
+  background-color: #000;
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 1.5;
+  display: block;
+  padding: 18px 16px;
+  margin-top: 40px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__list .list__item {
+  display: flex;
+  padding: 16px;
+  background-color: #fff;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__list .list__item .img__list {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 16px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__list .list__item .list__content {
+  width: 100%;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__list .list__item .list__content .content__title {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__list .list__item .list__content .content__subtitle {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__list .list__item:nth-child(n+2) {
+  border-top: 1px solid #ccc;
+}
+.detail .container .layout__detail .detail__item .card__itemS:nth-child(3) {
+  background-color: #fff;
+  padding-bottom: 16px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__advertise {
+  margin: 16px;
+  margin-bottom: 0px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__advertise .advertise__title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.detail .container .layout__detail .detail__item .card__itemS .tags {
+  background-color: #fff;
+  padding: 16px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .tags span {
+  background-color: #ccc;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  display: inline-block;
+  padding: 0px 8px;
+  margin-bottom: 16px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .tags span:first-child {
+  font-size: 15px;
+  background-color: #000;
+  color: #fff;
+}
+.detail .container .layout__detail .detail__item .card__itemS .layout__avatar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "h1 h2" "h3 h4";
+  grid-gap: 16px;
+  background-color: #fff;
+  padding: 16px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .layout__avatar .avatar__item {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .layout__avatar .avatar__item:first-child {
+  grid-area: h1;
+}
+.detail .container .layout__detail .detail__item .card__itemS .layout__avatar .avatar__item:nth-child(2) {
+  grid-area: h2;
+  filter: grayscale(75%);
+}
+.detail .container .layout__detail .detail__item .card__itemS .layout__avatar .avatar__item:nth-child(3) {
+  grid-area: h3;
+}
+.detail .container .layout__detail .detail__item .card__itemS .layout__avatar .avatar__item:last-child {
+  grid-area: h4;
+}
+.detail .container .layout__detail .detail__item .card__itemS .social__list {
+  display: flex;
+  color: #000;
+  list-style: none;
+  background-color: #fff;
+  padding: 8px 16px;
+  line-height: 1.5;
+  font-size: 24px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .social__list li:hover {
+  opacity: 0.6;
+}
+.detail .container .layout__detail .detail__item .card__itemS .social__list li a {
+  color: inherit;
+  margin-right: 5px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__subcribe {
+  background-color: #fff;
+  padding: 16px 15px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__subcribe .subcribe__desc {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__subcribe .card__btn {
+  width: 100%;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f44336;
+  border: none;
+  padding: 8px 16px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__subcribe .card__btn:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: #000;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__subcribe p {
+  display: block;
+  margin-bottom: 15px;
+}
+.detail .container .layout__detail .detail__item .card__itemS .card__subcribe p input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc !important;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.more__subcribe {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+.more__subcribe .more__content {
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff;
+  padding: 32px 48px;
+}
+.more__subcribe .more__content .more__title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-family: "Oswald";
+  letter-spacing: 4px;
+  line-height: 1.5;
+  margin: 10px 0px;
+}
+.more__subcribe .more__content .more__title .more__remove {
+  padding: 8px 16px;
+}
+.more__subcribe .more__content .more__title .more__remove:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+.more__subcribe .more__content .more__subtitle {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+.more__subcribe .more__content .more__btn {
+  border: none;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  width: 100%;
+  padding: 12px 24px;
+  margin-bottom: 16px;
+  display: block;
+}
+.more__subcribe .more__content .more__btn:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: #000;
+}
+.more__subcribe .more__content input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 15px 0px;
+}
+
+.app-footer {
+  background-color: #616161;
+  padding: 32px;
+}
+.app-footer .container-fluid .app-footer__btn {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 12px 24px;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+.app-footer .container-fluid .app-footer__btn i {
+  margin-right: 16px;
+}
+.app-footer .container-fluid .app-footer__btn:hover {
+  background-color: #ccc;
+  cursor: pointer;
+  color: #000;
+}
+.app-footer .container-fluid .app-footer__copyright {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 15px 0px;
+}
+.app-footer .container-fluid .app-footer__copyright a {
+  color: inherit;
+}/*# sourceMappingURL=FashionBlog.css.map */
