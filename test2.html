@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .app-header__background {
+            background: url("./assets/images/Cafe/coffeehouse.jpg") center / cover no-repeat;
+            min-height: 75%;
+            text-align: center;
+            color: #fff;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .app-header__time {
+            display: none;
+        }
+
+        .app-header__name {
+            font-size: 90px;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .app-header__address {
+            text-align: right;
+        }
+    </style>
+</head>
+
 <body>
 
     <h1>The Element Object</h1>
@@ -11,7 +46,11 @@
     <button id="myBtn">Try it</button>
 
     <p id="demo"></p>
-
+    <div class="app-header__background">
+        <p class="app-header__time"><span>Open from 6am to 5pm</span></p>
+        <p class="app-header__name">the <br> Cafe</p>
+        <p class="app-header__address">15 Adr street, 5015</p>
+    </div>
     <script>
         const element = document.getElementById("myBtn");
         element.addEventListener("click", function () {

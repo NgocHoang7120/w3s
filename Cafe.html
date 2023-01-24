@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Cafe.css">
+    <title>Cafe Template</title>
+</head>
+
+<body>
+    <header id="home" class="app-header">
+        <div class="container-fluid">
+            <ul class="app-header__list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutId">About</a></li>
+                <li><a href="#menuId">Menu</a></li>
+                <li><a href="#contactId">Where</a></li>
+            </ul>
+        </div>
+        <div class="app-header__background">
+            <p class="app-header__time"><span>Open from 6am to 5pm</span></p>
+            <p class="app-header__name">the <br> Cafe</p>
+            <p class="app-header__address">15 Adr street, 5015</p>
+        </div>
+    </header>
+    <main>
+        <section id="aboutId" class="about">
+            <div class="container">
+                <h3 class="about__title">About the cafe</h3>
+                <p class="about__content">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. <br>
+                    <span>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and
+                        lunch
+                        sandwiches, as well
+                        as a selection of sides and salads and other good stuff.</span>
+                </p>
+                <div class="about__sologan">
+                    <p class="sologoan__content">"Use products from nature for what it's worth - but never too early,
+                        nor too late." Fresh is the new sweet.</p>
+                    <p class="sologan__chef">Chef, Coffeeist and Owner: Liam Brown</p>
+                </div>
+                <img src="./assets/images/Cafe/coffeeshop.jpg" alt="coffeeshop" class="about__img">
+                <p class="about__open"><span>Opening hours:</span> everyday from 6am to 5pm.</p>
+                <p class="about__address"><span>Address:</span> 15 Adr street, 5015, NY</p>
+            </div>
+        </section>
+        <section id="menuId" class="menu">
+            <div class="container">
+                <h3 class="menu__title">The menu</h3>
+                <div class="menu__detail">
+                    <ul class="menu__list">
+                        <li><a class="gray-background link-eat" href="sub-cafe-eat.html" target="page"
+                                onclick="openEat(this)">Eat</a></li>
+                        <li><a class="link-drink" href="sub-cafe-drink.html" target="page"
+                                onclick="openDrink(this)">Drink</a></li>
+                    </ul>
+                </div>
+                <div class="menu__content">
+                    <iframe class="frame-eat-drink" name="page" width="100%" height="100%"
+                        style="border: none; display: none;"></iframe>
+                    <div class="content__default">
+                        <div class="eating__list">
+                            <div class="Bread">
+                                <p class="name">Bread Basket</p>
+                                <p class="description">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                            </div>
+                            <br>
+                            <div class="Fruits">
+                                <p class="name">Honey Almond Granola with Fruits</p>
+                                <p class="description">Natural cereal of honey toasted oats, raisins, almonds and dates
+                                    7.00</p>
+                            </div>
+                            <br>
+                            <div class="Waffle">
+                                <p class="name">Belgian Waffle</p>
+                                <p class="description">Vanilla flavored batter with malted flour 7.50</p>
+                            </div>
+                            <br>
+                            <div class="Egg">
+                                <p class="name">Scrambled eggs</p>
+                                <p class="description">Scrambled eggs, roasted red pepper and garlic, with green onions
+                                    7.50</p>
+                            </div>
+                            <br>
+                            <div class="Blueberry">
+                                <p class="name">Blueberry Pancakes</p>
+                                <p class="description">With syrup, butter and lots of berries 8.50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/images/Cafe/coffeehouse2.jpg" alt="coffee" class="menu__img">
+            </div>
+        </section>
+        <section id="contactId" class="contact">
+            <div class="container">
+                <h3 class="contact__title">Where to find us</h3>
+                <p class="contact__subtitle">Find us at some address at some place</p>
+                <img src="./assets/images/Cafe/map.jpg" alt="map" class="contact__map">
+                <p class="contact__content">
+                    <b>FYI!</b> We offer full-service catering for any event, large or small. We understand your needs
+                    and we will cater the food to
+                    satisfy the biggerst criteria of them all, both look and taste. <br>
+                    <span><b>Reserve</b> a table, ask for today's special or just send us a message:</span>
+                </p>
+                <form action="" class="contact__form">
+                    <p class="form__name"><input name="Name" type="text" placeholder="Name" required></p>
+                    <p class="form__people"><input name="People" type="number" placeholder="How many people" required>
+                    </p>
+                    <p class="form__data"><input name="Date" type="datetime-local" value="2020-11-16T10:00"></p>
+                    <p class="form__message"><input name="Message" type="text"
+                            placeholder="Message \ Special requirements" required>
+                    </p>
+                    <button class="contact__btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="app-footer">
+        <div class="container-fluid">
+            <p>Powered by <a href="javascript:avoid(0)">CNH</a></p>
+        </div>
+    </footer>
+</body>
+<script>
+    let openEat = (open) => {
+        const remove = document.querySelector(".link-drink");
+        remove.classList.remove("gray-background");
+        // let add = document.querySelector(".link-eat");
+        // add.classList.add("gray-background");
+        open.classList.add("gray-background");
+
+        if (open) {
+            let show = document.querySelector(".frame-eat-drink");
+            show.style.display = "block";
+            // show.userSet = true;
+
+            let hide = document.querySelector(".content__default");
+            hide.style.display = "none";
+        } else {
+            return null;
+        }
+    }
+
+    let openDrink = (open) => {
+        const remove = document.querySelector(".link-eat");
+        remove.classList.remove("gray-background");
+        // let add = document.querySelector(".link-drink");
+        // add.classList.add("gray-background");
+        open.classList.add("gray-background");
+
+        if (open) {
+            let show = document.querySelector(".frame-eat-drink");
+            show.style.display = "block";
+            // show.userSet = true;
+
+            let hide = document.querySelector(".content__default");
+            hide.style.display = "none";
+        } else {
+            return null;
+        }
+    }
+</script>
+
+</html>
