@@ -1,0 +1,186 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/ClothingStore.css">
+    <title>Clothing Store Template</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="layout">
+            <div class="nav-left">
+                <div class="block">
+                    <h3 class="nav-left__logo">LOGO</h3>
+                    <ul class="nav-left__list-clothing">
+                        <li><a href="javascript:void(0)">Shirts</a></li>
+                        <li><a href="javascript:void(0)">Dresses</a></li>
+                        <li onclick="showHide()"><a href="javascript:void(0)">Jeans <i class="fa fa-caret-down"></i></a>
+                        </li>
+                        <div class="sub-jean">
+                            <ul class="jean-list">
+                                <li><a href="javascript:void(0)"><i class="fa fa-caret-right"></i> Skinny</a></li>
+                                <li><a href="javascript:void(0)">Relaxed</a></li>
+                                <li><a href="javascript:void(0)">Bootcut</a></li>
+                                <li><a href="javascript:void(0)">Straight</a></li>
+                            </ul>
+                        </div>
+                        <li><a href="javascript:void(0)">Jackets</a></li>
+                        <li><a href="javascript:void(0)">Gymwear</a></li>
+                        <li><a href="javascript:void(0)">Blazers</a></li>
+                        <li><a href="javascript:void(0)">Shoes</a></li>
+                    </ul>
+                    <ul class="nav-left__more">
+                        <li><a href="javascript:void(0)">Contact</a></li>
+                        <li><a href="javascript:void(0)">Newsletter</a></li>
+                        <li><a href="javascript:void(0)">Subscribe</a></li>
+                    </ul>
+                </div>
+            </div>
+            <header class="app-header">
+                <div class="content__header">
+                    <p class="header__name">Jeans</p>
+                    <div class="header__buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="content__img">
+                    <img src="./assets/images/ClothingStore/jeans.jpg" alt="background" class="background__img">
+                    <div class="content__text">
+                        <p class="content__title">New arrivals</p>
+                        <p class="content__year">Collection 2016</p>
+                        <button class="content__btn"><a href="#Content">SHOP NOW</a></button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div id="Content" class="content">
+                    <p class="content__numberItem">8 item</p>
+                    <div class="jeans-layout">
+                        <div class="jean-item">
+                            <img src="./assets/images/ClothingStore/jeans1.jpg" alt="jean1" class="jean__img">
+                            <p class="jean-description">Ripped Skinny Jeans</p>
+                            <p class="jean-price">$24.99</p>
+                        </div>
+                        <div class="jean-item">
+                            <p class="jean-status">New</p>
+                            <div class="jean-icon">
+                                <img src="./assets/images/ClothingStore/jeans2.jpg" alt="jean1" class="jean__img">
+                                <button class="btn-hidden">Buy now <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <p class="jean-description">Mega Ripped Jeans</p>
+                            <p class="jean-price">$19.99</p>
+
+                        </div>
+                        <div class=" jean-item">
+                            <img src="./assets/images/ClothingStore/jeans3.jpg" alt="jean1" class="jean__img">
+                            <p class="jean-description">Washed Skinny Jeans</p>
+                            <p class="jean-price">$20.50</p>
+                        </div>
+                        <div class="jean-item">
+                            <img src="./assets/images/ClothingStore/jeans4.jpg" alt="jean1" class="jean__img">
+                            <p class="jean-description">Vintage Skinny Jeans</p>
+                            <p class="jean-price">$14.99</p>
+                        </div>
+                        <div class="jean-item">
+                            <img src="./assets/images/ClothingStore/jeans1.jpg" alt="jean1" class="jean__img">
+                            <p class="jean-description">Ripped Skinny Jeans</p>
+                            <p class="jean-price">$24.99</p>
+                        </div>
+                        <div class="jean-item">
+                            <img src="./assets/images/ClothingStore/jeans1.jpg" alt="jean1" class="jean__img">
+                            <p class="jean-description">Ripped Skinny Jeans</p>
+                            <p class="jean-price">$24.99</p>
+                        </div>
+                        <div class="jean-item">
+                            <p class="jean-status">Sale</p>
+                            <div class="jean-icon">
+                                <img src="./assets/images/ClothingStore/jeans4.jpg" alt="jean1" class="jean__img">
+                                <button class="btn-hidden">Buy now <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <p class="jean-description">Ripped Skinny Jeans</p>
+                            <p class="jean-price">$9.99</p>
+                        </div>
+                        <div class="jean-item">
+                            <img src="./assets/images/ClothingStore/jeans1.jpg" alt="jean1" class="jean__img">
+                            <p class="jean-description">Ripped Skinny Jeans</p>
+                            <p class="jean-price">$24.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <h2 class="subscribe__title">Subscribe</h2>
+                    <p class="subscribe__subtitle">To get special offers and VIP treatment:</p>
+                    <p class="subscribe__email"><input type="email" placeholder="Enter e-mail"></p>
+                    <button class="subscribe__btn">Subscribe</button>
+                </div>
+            </main>
+            <footer class="app-footer">
+                <div class="footer-layout">
+                    <div class="footer-item">
+                        <p class="footer__title">Contact</p>
+                        <p class="form__subtitle">Questions? Go ahead.</p>
+                        <form action="" target="_blank" class="contact__form">
+                            <p><input type="text" placeholder="Name" name="Name" required></p>
+                            <p><input type="email" placeholder="Email" name="Email" required></p>
+                            <p><input type="text" placeholder="Subject" name="Subject" required></p>
+                            <p><input type="text" placeholder="Message" name="Message" required></p>
+                            <button class="form__btn">Send</button>
+                        </form>
+                    </div>
+                    <div class="footer-item">
+                        <p class="footer__title">About</p>
+                        <ul class="link-list">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">We're hiring</a></li>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Find store</a></li>
+                            <li><a href="">Shipment</a></li>
+                            <li><a href="">Payment</a></li>
+                            <li><a href="">Gift card</a></li>
+                            <li><a href="">Return</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <p class="footer__title">Store</p>
+                        <ul class="contact-list">
+                            <li><i class="fa-solid fa-location-dot"></i> Company Name</li>
+                            <li><i class="fa-solid fa-phone"></i> 0044123123</li>
+                            <li><i class="fa-solid fa-envelope"></i> ex@mail.com</li>
+                        </ul>
+                        <p class="footer__title">We accept</p>
+                        <ul class="payment-list">
+                            <li><i class="fa-brands fa-cc-amex"></i> Amex</li>
+                            <li><i class="fa-solid fa-credit-card"></i> Credit Card</li>
+                        </ul>
+                        <ul class="social-list">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-snapchat"></i></li>
+                            <li><i class="fa-brands fa-pinterest"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-linkedin"></i></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer-copyright">
+                    <p>Clone by <a href="javascript:void(0)">CNH</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<SCript>
+    let showHide = () => {
+        const view = document.querySelector(".sub-jean");
+        view.classList.toggle("show");
+    }
+</SCript>
+
+</html>
