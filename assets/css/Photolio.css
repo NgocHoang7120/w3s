@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.app-header .container {
+  max-width: 1500px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.app-header .container i {
+  font-size: 36px;
+  padding: 8px 16px;
+}
+.app-header .container i:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.header-card {
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  animation: topDown 0.6s;
+}
+.header-card .icon-x {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-card .icon-x i {
+  color: #fff;
+  font-size: 36px;
+  padding: 8px 16px;
+}
+.header-card .icon-x i:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.header-card .list-bar {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 150px;
+}
+.header-card .list-bar li {
+  list-style-type: none;
+}
+.header-card .list-bar li a {
+  font-size: 36px;
+  padding: 8px 16px;
+  color: #757575;
+  text-decoration: none;
+}
+.header-card .list-bar li a:hover {
+  color: #fff;
+}
+
+@keyframes topDown {
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=Photolio.css.map */

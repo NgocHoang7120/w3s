@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+$myGreen: #009688;
+$myFont: "Roboto", sans-serif;
+
+@mixin boderBottom {
+    border: none;
+    border-bottom: 1px solid #eee;
+
+    margin: 20px 0px;
+}
+
+@mixin level-skill {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: $myFont;
+
+    background-color: #009688;
+    height: 100%;
+    border-radius: 18px;
+}
+
+@mixin level-language {
+    height: 100%;
+    background-color: $myGreen;
+    border-radius: 24px;
+}
+
+hr {
+    @include boderBottom;
+}
+
+.content {
+    .container {
+        max-width: 1432px;
+        padding: 0px 16px;
+        margin: 16px auto 0px auto;
+
+        .layout-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-areas: "left rigth right right";
+
+            grid-column-gap: 16px;
+
+            .content-item {
+                &:first-child {
+                    grid-area: left;
+
+                    .block-left {
+                        background-color: #fff;
+                        box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+
+                        .content-block {
+                            position: relative;
+
+                            .content-img {
+                                width: 100%;
+                                height: auto;
+                                object-fit: cover;
+                            }
+
+                            .img-name {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+
+                                font-family: $myFont;
+                                font-size: 30px;
+                                line-height: 1.5;
+
+                                padding: 0px 16px;
+                                margin: 10px 0px;
+                            }
+                        }
+
+                        .content-contact {
+                            list-style-type: none;
+                            padding: 0px 16px;
+
+                            li {
+                                font-size: 15px;
+                                font-family: $myFont;
+                                line-height: 1.5;
+                                color: #757575;
+                                margin: 15px 0px;
+
+                                i {
+                                    color: $myGreen;
+                                    margin-right: 16px;
+                                }
+                            }
+                        }
+
+                        .content-level-skill {
+                            padding: 0px 16px;
+
+                            .skill-title {
+                                font-size: 18px;
+                                font-family: $myFont;
+                                line-height: 1.5;
+                                color: #757575;
+
+                                margin: 18px 0px;
+
+                                i {
+                                    margin-right: 16px;
+                                    color: $myGreen;
+                                }
+                            }
+
+                            .skill-percent {
+                                .skill-name {
+                                    font-size: 15px;
+                                    font-family: $myFont;
+                                    line-height: 1.5;
+                                    color: #757575;
+
+                                    margin: 15px 0px;
+                                }
+
+                                .percent {
+                                    height: 18px;
+                                    background-color: #f1f1f1;
+                                    border-radius: 18px;
+
+                                    .percent-90 {
+                                        @include level-skill;
+                                        width: 90%;
+                                    }
+
+                                    .percent-80 {
+                                        @include level-skill;
+                                        width: 80%;
+                                    }
+
+                                    .percent-75 {
+                                        @include level-skill;
+                                        width: 75%;
+                                    }
+
+                                    .percent-50 {
+                                        @include level-skill;
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .content-level-language {
+                            padding: 0px 16px;
+
+                            .language-title {
+                                font-size: 18px;
+                                font-family: $myFont;
+                                line-height: 1.5;
+                                color: #757575;
+                                font-weight: 600;
+
+                                margin: 41px 0px 18px 0px;
+
+                                i {
+                                    color: $myGreen;
+                                    margin-right: 16px;
+                                }
+                            }
+
+                            .level-language {
+                                .language-name {
+                                    font-size: 15px;
+                                    font-family: $myFont;
+                                    line-height: 1.5;
+                                    color: #757575;
+
+                                    margin: 15px 0px;
+                                }
+
+                                .percent-language {
+                                    height: 24px;
+                                    background-color: #f1f1f1;
+                                    border-radius: 24px;
+
+                                    .percent-100 {
+                                        @include level-language;
+                                    }
+
+                                    .percent-50 {
+                                        width: 50%;
+                                        @include level-language;
+                                    }
+
+                                    .percent-33 {
+                                        width: calc(100%/3);
+                                        @include level-language;
+                                    }
+                                }
+
+                                &:last-child {
+                                    padding-bottom: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    grid-area: right;
+
+                    .content-desc {
+                        padding: 0px 16px;
+
+                        &:first-child,
+                        &:last-child {
+                            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+                            background-color: #fff;
+                            margin-bottom: 16px;
+                        }
+
+                        .desc-title {
+                            font-size: 30px;
+                            font-family: $myFont;
+                            line-height: 1.5;
+                            color: #757575;
+
+                            padding: 16px 0px;
+                            margin: 10px 0px;
+                            display: inline-block;
+
+                            i {
+                                color: $myGreen;
+                                margin-right: 16px;
+                            }
+                        }
+
+                        .desc-detail {
+                            .detail-item {
+                                padding: 0px 16px;
+
+                                .detail-title {
+                                    font-size: 18px;
+                                    font-family: $myFont;
+                                    line-height: 1.5;
+                                    font-weight: 600;
+
+                                    opacity: 0.6;
+                                    margin: 10px 0px;
+                                    display: inline-block;
+                                }
+
+                                .detail-time {
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    font-family: $myFont;
+                                    color: $myGreen;
+
+                                    span {
+                                        background-color: $myGreen ;
+                                        color: #fff;
+                                        display: inline-block;
+                                        border-radius: 4px;
+                                        padding: 0px 8px;
+                                    }
+
+                                    i {
+                                        margin-right: 16px;
+                                    }
+                                }
+
+                                .detail-text {
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.5;
+                                    font-family: $myFont;
+
+                                    margin: 15px 0px;
+                                    display: inline-block;
+
+                                    &:last-child {
+                                        margin-bottom: 38px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.app-footer {
+    .container-fluid {
+        background-color: $myGreen;
+        color: #fff;
+        padding: 0px 16px;
+        text-align: center;
+        font-size: 15px;
+        font-family: $myFont;
+        line-height: 1.5;
+
+        .app-footer-desc {
+            margin: 15px 0px;
+            display: inline-block;
+        }
+
+        .social-list {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+
+            i {
+                margin-right: 5px;
+                font-size: 14px;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .copy-right {
+            display: inline-block;
+            margin: 15px 0px;
+
+            a {
+                color: currentColor;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:739px) {
+    .content {
+        .container {
+            .layout-content {
+                display: unset;
+            }
+        }
+    }
+}

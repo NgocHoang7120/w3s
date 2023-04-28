@@ -1,0 +1,662 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+.app-header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.app-header .container-fluid {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-header .container-fluid .nav-left {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.app-header .container-fluid .nav-left li a {
+  color: #fff;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 12px 24px;
+}
+
+.app-header .container-fluid .nav-left li a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.app-header .container-fluid .nav-left li:last-child {
+  position: relative;
+}
+
+.app-header .container-fluid .nav-left li:last-child .sub-nav {
+  position: absolute;
+  z-index: 1;
+  list-style-type: none;
+  min-width: 160px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  display: none;
+}
+
+.app-header .container-fluid .nav-left li:last-child .sub-nav li a {
+  display: block;
+  color: red;
+  text-transform: none;
+  padding: 8px 16px;
+}
+
+.app-header .container-fluid .nav-left li:last-child:hover {
+  background-color: #ccc;
+}
+
+.app-header .container-fluid .nav-left li:last-child:hover>a {
+  color: #000;
+}
+
+.app-header .container-fluid .nav-left li:last-child:hover .sub-nav {
+  display: block;
+}
+
+.app-header .container-fluid .icon-right i {
+  padding: 12px 24px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.app-header .container-fluid .icon-right i:hover {
+  background-color: #f44336;
+}
+
+.app-header .container-fluid .icon-right i:last-child {
+  display: none;
+}
+
+.slider {
+  margin-top: 46.5px;
+}
+
+.slider .slider-card {
+  position: relative;
+}
+
+.slider .slider-card .slider__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.slider .slider-card .slider__text {
+  z-index: 1;
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.slider .slider-card .slider__text .text__city {
+  font-size: 24px;
+  margin: 10px 0px;
+}
+
+.slider .slider-card .slider__text .text__desc {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+
+.band-content .container {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 64px 16px;
+  text-align: center;
+}
+
+.band-content .container .band__title {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  margin: 10px 0px;
+}
+
+.band-content .container .band__subtitle {
+  line-height: 1.5;
+  font-style: italic;
+  opacity: 0.6;
+  margin: 15px 0px;
+}
+
+.band-content .container .band__desc {
+  text-align: justify;
+  margin: 15px 0px;
+}
+
+.band-content .container .band__members {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 32px;
+}
+
+.band-content .container .band__members .member-item .member__name {
+  margin: 15px 0px;
+}
+
+.band-content .container .band__members .member-item .member__img {
+  width: 60%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.tour-content {
+  background-color: #000;
+}
+
+.tour-content .container {
+  max-width: 800px;
+  padding: 64px 16px;
+  margin: 0px auto;
+  color: #fff;
+}
+
+.tour-content .container .tour__title {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+.tour-content .container .tour__subtitle {
+  text-align: center;
+  font-style: italic;
+  margin: 15px 0px;
+  opacity: 0.6;
+}
+
+.tour-content .container .tour__month .month-item {
+  color: #757575;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.tour-content .container .tour__month .month-item p {
+  padding: 8px 16px;
+}
+
+.tour-content .container .tour__month .month-item p span {
+  color: #fff;
+  background-color: #f44336;
+  display: inline-block;
+  padding: 0px 8px;
+  margin-left: 16px;
+}
+
+.tour-content .container .tour__month .month-item:last-child p {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-content .container .tour__month .month-item:last-child p span {
+  background-color: #000;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.tour-content .container .tour-address {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-areas: "h1 h2 h3";
+  grid-column-gap: 16px;
+  padding: 32px 0px;
+}
+
+.tour-content .container .tour-address .address-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.tour-content .container .tour-address .address-item .address__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.tour-content .container .tour-address .address-item .address__img:hover {
+  opacity: 0.6;
+}
+
+.tour-content .container .tour-address .address-item .address__card {
+  flex-grow: 1;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 16px 0px 16px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tour-content .container .tour-address .address-item .address__card .address__name {
+  font-weight: bold;
+  margin: 10px 0px 15px;
+}
+
+.tour-content .container .tour-address .address-item .address__card .address__time {
+  margin: 15px 0px;
+  opacity: 0.6;
+}
+
+.tour-content .container .tour-address .address-item .address__card .address__desc {
+  margin: 15px 0px;
+}
+
+.tour-content .container .tour-address .address-item .address__card .address-btn {
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #000;
+  border: none;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+.tour-content .container .tour-address .address-item .address__card .address-btn:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.tour-content .container .tour-address .address-item:first-child {
+  grid-area: h1;
+}
+
+.tour-content .container .tour-address .address-item:nth-child(2) {
+  grid-area: h2;
+}
+
+.tour-content .container .tour-address .address-item:last-child {
+  grid-area: h3;
+}
+
+.ticket-modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  display: none;
+}
+
+.ticket-modal .container {
+  background-color: #fff;
+  max-width: 900px;
+  margin: auto;
+  animation: zoom 0.6s;
+}
+
+.ticket-modal .container .header-modal {
+  color: #fff;
+  background-color: #009688;
+  padding: 32px 16px;
+  position: relative;
+}
+
+.ticket-modal .container .header-modal .header__close {
+  font-size: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 16px;
+}
+
+.ticket-modal .container .header-modal .header__close:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.ticket-modal .container .header-modal .header__title {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.ticket-modal .container .header-modal .header__title i {
+  margin-right: 16px;
+}
+
+.ticket-modal .container .ticket-form {
+  padding: 15px 16px 16px;
+}
+
+.ticket-modal .container .ticket-form label {
+  display: block;
+}
+
+.ticket-modal .container .ticket-form input {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  margin: 15px 0px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.ticket-modal .container .ticket-form button {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: #009688;
+  border: none;
+  padding: 16px;
+  width: 100%;
+}
+
+.ticket-modal .container .ticket-form button:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.ticket-modal .container .footer-modal {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.ticket-modal .container .footer-modal .footer-btn {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  border: none;
+  background-color: #f44336;
+  padding: 8px 16px;
+}
+
+.ticket-modal .container .footer-modal .footer-btn:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.ticket-modal .container .footer-modal .footer-help a:hover {
+  cursor: pointer;
+}
+
+.contact-content .container {
+  max-width: 800px;
+  margin: auto;
+  padding: 64px 16px;
+}
+
+.contact-content .container .contact__title {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+.contact-content .container .contact__subtitle {
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.6;
+  margin: 15px 0px;
+}
+
+.contact-content .container .contact-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-areas: "left right";
+  padding: 32px 0px;
+}
+
+.contact-content .container .contact-card .contact-info {
+  font-size: 18px;
+  grid-area: left;
+}
+
+.contact-content .container .contact-card .contact-info p i {
+  width: 30px;
+}
+
+.contact-content .container .contact-card .contact-form {
+  grid-area: right;
+}
+
+.contact-content .container .contact-card .contact-form .get-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-areas: "b1 b2" "b3 b3";
+}
+
+.contact-content .container .contact-card .contact-form .get-info div input {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+}
+
+.contact-content .container .contact-card .contact-form .get-info div:first-child {
+  grid-area: b1;
+  margin: 0px 16px 8px 0px;
+}
+
+.contact-content .container .contact-card .contact-form .get-info div:nth-child(2) {
+  grid-area: b2;
+}
+
+.contact-content .container .contact-card .contact-form .get-info div:last-child {
+  grid-area: b3;
+}
+
+.contact-content .container .contact-card .contact-form .form__btn {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #000;
+  float: right;
+  border: none;
+  padding: 8px 16px;
+  margin: 16px 0px;
+}
+
+.contact-content .container .contact-card .contact-form .form__btn::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact-content .container .contact-card .contact-form .form__btn:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.app-footer .footer__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  filter: grayscale(50%);
+}
+
+.app-footer .footer__social {
+  text-align: center;
+  font-size: 24px;
+  padding: 64px 16px;
+  background-color: #f1f1f1;
+  opacity: 0.6;
+}
+
+.app-footer .footer__social .social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.app-footer .footer__social .social-list li {
+  list-style-type: none;
+  margin-right: 4px;
+}
+
+.app-footer .footer__social .social-list li:hover {
+  opacity: 0.6;
+}
+
+.app-footer .footer__social .copyright {
+  font-size: 15px;
+  margin: 15px 0px;
+}
+
+.app-footer .footer__social .copyright a {
+  color: currentColor;
+}
+
+.app-footer .footer__social .copyright a:hover {
+  cursor: pointer;
+  color: blue;
+  opacity: 1;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.mobile-bar {
+  height: auto !important;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .ticket-modal {
+    padding: 100px 16px;
+  }
+
+  .ticket-modal .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app-header {
+    z-index: 3;
+  }
+
+  .app-header .container-fluid {
+    display: block;
+    position: relative;
+  }
+
+  .app-header .container-fluid .nav-left {
+    width: 100%;
+    display: block;
+    height: 46.5px;
+    overflow: hidden;
+  }
+
+  .app-header .container-fluid .nav-left li:first-child {
+    display: inline-block;
+  }
+
+  .app-header .container-fluid .nav-left li:last-child .sub-nav {
+    position: unset;
+  }
+
+  .app-header .container-fluid .nav-left li:last-child .sub-nav li {
+    width: 100%;
+  }
+
+  .app-header .container-fluid .nav-left li:last-child:hover .sub-nav {
+    background-color: #000;
+  }
+
+  .app-header .container-fluid .nav-left li:last-child:hover .sub-nav a {
+    padding: 8px 16px 8px 32px;
+  }
+
+  .app-header .container-fluid .icon-right i:first-child {
+    display: none;
+  }
+
+  .app-header .container-fluid .icon-right i:last-child {
+    display: block;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .app-header .container-fluid .icon-right i:last-child::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .tour-content .tour__month {
+    margin-bottom: 16px;
+  }
+
+  .tour-content .container .tour-address {
+    display: unset;
+  }
+
+  .ticket-modal {
+    padding: 100px 16px;
+  }
+
+  .contact-content .container .contact-card {
+    display: unset;
+  }
+
+  .contact-content .container .contact-card .get-info {
+    margin-top: 15px;
+  }
+}
+
+/*# sourceMappingURL=Band.css.map */

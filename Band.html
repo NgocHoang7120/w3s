@@ -1,0 +1,263 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Template</title>
+    <link rel="stylesheet" href="./assets/css/Band.css">
+    <link rel="icon" href="./assets/images/band/Multimedia__28117_29.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="container-fluid">
+            <ul class="nav-left">
+                <li><a href="#">Home</a></li>
+                <li><a onclick="hiddenMobileNav()" href="#Band">Band</a></li>
+                <li><a onclick="hiddenMobileNav()" href="#Tour">Tour</a></li>
+                <li><a onclick="hiddenMobileNav()" href="#Contact">Contact</a></li>
+                <li>
+                    <a href="javascript:void(0)">More <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="sub-nav">
+                        <li onclick="hiddenMobileNav()"><a href="#">Merchandise</a></li>
+                        <li onclick="hiddenMobileNav()"><a href="#">Extras</a></li>
+                        <li onclick="hiddenMobileNav()"><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="icon-right">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars mobile-menu" onclick="openMobleNav()"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slider-card">
+                <img src="./assets/images/band/la.jpg" alt="img-concert" class="slider__img">
+                <div class="slider__text">
+                    <p class="text__city">Los Angeles</p>
+                    <p class="text__desc">We had the best time playing at Venice Beach</p>
+                </div>
+            </div>
+            <div class="slider-card">
+                <img src="./assets/images/band/ny.jpg" alt="img-concert" class="slider__img">
+                <div class="slider__text">
+                    <p class="text__city">New York</p>
+                    <p class="text__desc">The atmosphere in New York is lorem ipsum.</p>
+                </div>
+            </div>
+            <div class="slider-card">
+                <img src="./assets/images/band/chicago.jpg" alt="img-concert" class="slider__img">
+                <div class="slider__text">
+                    <p class="text__city">Chicago</p>
+                    <p class="text__desc">Thank you, Chicago - A night we won't forget.</p>
+                </div>
+            </div>
+        </div>
+        <div id="Band" class="band-content">
+            <div class="container">
+                <p class="band__title">THE BAND</p>
+                <p class="band__subtitle">We love music</p>
+                <p class="band__desc">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est
+                    laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="band__members">
+                    <div class="member-item">
+                        <p class="member__name">Name</p>
+                        <img src="./assets/images/band/bandmember.jpg" alt="avatar" class="member__img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member__name">Name</p>
+                        <img src="./assets/images/band/bandmember.jpg" alt="avatar" class="member__img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member__name">Name</p>
+                        <img src="./assets/images/band/bandmember.jpg" alt="avatar" class="member__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Tour" class="tour-content">
+            <div class="container">
+                <h1 class="tour__title">Tour dates</h1>
+                <p class="tour__subtitle">Remember to book your tickets!
+                </p>
+                <div class="tour__month">
+                    <div class="month-item">
+                        <p>September <span>Sold out</span></p>
+                    </div>
+                    <div class="month-item">
+                        <p>October <span>Sold out</span></p>
+                    </div>
+                    <div class="month-item">
+                        <p>November <span>3</span></p>
+                    </div>
+                </div>
+                <div class="tour-address">
+                    <div class="address-item">
+                        <img src="./assets/images/band/newyork.jpg" alt="New York" class="address__img">
+                        <div class="address__card">
+                            <div>
+                                <p class="address__name">New York</p>
+                                <p class="address__time">Fri 27 Nov 2016</p>
+                            </div>
+                            <p class="address__desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="address-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <img src="./assets/images/band/paris.jpg" alt="Paris" class="address__img">
+                        <div class="address__card">
+                            <div>
+                                <p class="address__name">Paris</p>
+                                <p class="address__time">Sat 28 Nov 2016</p>
+                            </div>
+                            <p class="address__desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="address-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <img src="./assets/images/band/sanfran.jpg" alt="San Francisco" class="address__img">
+                        <div class="address__card">
+                            <div>
+                                <p class="address__name">San Francisco</p>
+                                <p class="address__time">Sun 29 Nov 2016</p>
+                            </div>
+                            <p class="address__desc">Praesent tincidunt sed .</p>
+                            <button class="address-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-modal">
+            <div class="container">
+                <div class="header-modal">
+                    <p class="header__close">X</p> <!-- onclick="hiddenTicket()" -->
+                    <h1 class="header__title"><i class="fa-solid fa-suitcase"></i>Tickets</h1>
+                </div>
+                <form action="" class="ticket-form">
+                    <label for="fmoney"><i class="fa-solid fa-cart-shopping"></i> Tickets, $15 per person</label>
+                    <input type="text" id="fmoney" name="fmoney" placeholder="How many?" required>
+                    <label for="femail"><i class="fa-solid fa-user"></i> Send To</label>
+                    <input type="email" id="femail" name="femail" placeholder="Enter email" required>
+                    <button type="submit">Pay <i class="fa-solid fa-check"></i></button>
+                </form>
+
+                <div class="footer-modal">
+                    <button class="footer-btn">Close <i class="fa fa-remove"></i></button>
+                    <!--onclick="hiddenTicket()"-->
+                    <p class="footer-help">Need <a href="javascript:void(0)">help?</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="Contact" class="contact-content">
+            <div class="container">
+                <h1 class="contact__title">Contact</h1>
+                <p class="contact__subtitle">Fan? Drop a note!</p>
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
+                        <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
+                        <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+                    </div>
+                    <form action="" class="contact-form">
+                        <div class="get-info">
+                            <div><input type="text" placeholder="Name" required></div>
+                            <div><input type="email" placeholder="Email" required></div>
+                            <div><input type="text" placeholder="Message" required></div>
+                        </div>
+                        <button type="submit" class="form__btn">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="app-footer">
+        <img src="./assets/images/band/map.jpg" alt="map" class="footer__img">
+        <div class="footer__social">
+            <ul class="social-list">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-snapchat"></i></li>
+                <li><i class="fa-brands fa-pinterest-p"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </ul>
+            <p class="copyright">Powered by <a href="javascript:void(0)">CNH</a></p>
+        </div>
+    </footer>
+</body>
+<script>
+    // hiển thị bảng mua vé khi nhấn nút button
+    const clickBtn = () => {
+        const btns = document.querySelectorAll('.address-btn');
+        const modal = document.querySelector('.ticket-modal');
+        // console.log("btns;", typeof btns);
+
+        // bắt sự kiện click trên toàn bộ  giao diện web window.onclick //document.onclick trong thẻ html
+        document.onclick = (event) => {
+            // console.log("click window", event.target);
+            for (let i = 0; i < btns.length; i++) {
+                if (event.target === btns[i]) {
+                    modal.style.display = "block";
+                }
+            }
+        }
+    }
+
+    // ẩn bảng mua vé
+    //const hiddenTicket = () => document.querySelector(".ticket-modal").style.display = "none";
+    window.onclick = (event) => {
+        const closeBtn = document.querySelector(".footer-btn");
+        const Xmark = document.querySelector(".header__close");
+        if (event.target === closeBtn || event.target === Xmark) {
+            document.querySelector(".ticket-modal").style.display = "none";
+        }
+    }
+
+    //hiển thị hiệu ứng trượt ảnh sau 2.5s
+    const showSlides = () => {
+        let sliders = document.querySelectorAll(".slider-card");
+        for (let i = 0; i < sliders.length; i++) {
+            sliders[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > sliders.length) {
+            slideIndex = 1;
+        }
+        sliders[slideIndex - 1].style.display = "block";
+        // console.log("sliders: ", sliders);
+        setTimeout(showSlides, 2500);
+    };
+
+    // show and hide mobile bar
+    const openMobleNav = () => {
+        let bar = document.querySelector(".nav-left");
+        bar.classList.toggle("mobile-bar");
+    }
+
+    const hiddenMobileNav = () => {
+        // let links = document.querySelectorAll(".nav-left li a[href *= '#']")
+        // console.log("check links: ", links);
+        let bar = document.querySelector(".nav-left");
+        bar.classList.toggle("mobile-bar");
+    }
+
+    let slideIndex = 0;
+    showSlides();
+    clickBtn();
+</script>
+
+</html>

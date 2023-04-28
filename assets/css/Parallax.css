@@ -80,8 +80,7 @@ html {
   padding: 12px 24px;
 }
 .header .top_background .Sologan p {
-  -webkit-animation: opac 0.8s;
-          animation: opac 0.8s;
+  animation: opac 0.8s;
   line-height: 1.2;
 }
 .header .top_background .blur {

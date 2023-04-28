@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@mixin gray-bgr-btn {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.btn-classical {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #000;
+
+    padding: 8px 16px;
+    width: 100%;
+
+    &:hover {
+        @include gray-bgr-btn;
+    }
+}
+
+.app-header {
+    background: url('../images/Wedding/wedding_couple.jpg') center / cover no-repeat;
+    min-height: 100%;
+    filter: grayscale(50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 4px;
+
+    .app-header__human-name {
+        font-size: 64px;
+    }
+
+    .app-header__title {
+        font-size: 30px;
+        margin: 10px 0px 15px 0px;
+    }
+
+    .app-header__time {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.sticky-bottom {
+    padding: 8px 16px;
+    background-color: #fff;
+    opacity: 0.75;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    .container-fluid {
+        .nav-bottom {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+
+            li {
+                color: #000;
+                font-size: 15px;
+                width: 100%;
+
+                a {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: currentColor;
+                    padding: 8px 16px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #ccc;
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        &:hover {
+                            background-color: #000;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.introduction {
+    padding: 64px 16px;
+    background-color: #f2e1e1;
+    text-align: center;
+
+    .container {
+        max-width: 980px;
+        margin: 0px auto;
+
+        .introduction__title {
+            font-size: 36px;
+            color: #757575;
+            // text-align: center;
+            margin: 10px 0px;
+        }
+
+        .introduction__img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+
+            filter: grayscale(50%);
+            margin: 32px 0px;
+        }
+
+        .introduction__text {
+            font-style: italic;
+            line-height: 2;
+            text-align: justify;
+
+            margin: 15px 0px;
+        }
+
+        .introduction__btn {
+            font-size: 18px;
+            color: #fff;
+            line-height: 2;
+            // display: block;
+            // margin: 0px auto;
+
+            border: none;
+            border-radius: 4px;
+            background-color: #000;
+            margin: 38px 0px 15px 0px;
+
+            &:hover {
+                @include gray-bgr-btn;
+            }
+
+            a {
+                color: inherit;
+                display: block;
+                padding: 12px 24px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.flower-card {
+    background: url('../images/Wedding/flowers.jpg') center / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    .flower-card__content {
+        font-size: 64px;
+        margin: 10px 0px;
+        font-weight: 400;
+    }
+
+    .flower-card__text {
+        font-size: 30px;
+        margin: 33px 0px 10px 0px;
+        font-weight: 400;
+    }
+}
+
+.wedding {
+    padding: 64px 16px;
+    background-color: #f2e1e1;
+    text-align: center;
+
+    .container {
+        max-width: 980px;
+        margin: 0px auto;
+
+        .wedding__title {
+            font-size: 36px;
+            color: #757575;
+            font-weight: 400;
+            text-transform: uppercase;
+
+            margin: 10px 0px;
+        }
+
+        .wedding__img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+
+            margin: 64px 0px;
+            border-radius: 8px;
+            filter: grayscale(75%);
+        }
+
+        .wedding__time-place {
+            display: flex;
+            justify-content: space-around;
+
+            .wedding__time,
+            .wedding__place {
+                h3 {
+                    font-size: 30px;
+                    margin: 10px 0px;
+                    font-weight: 400;
+                }
+
+                p {
+                    margin: 15px 0px;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
+
+.res-card {
+    padding: 64px 16px;
+    background-color: #ffdddd;
+
+    .container-fluid {
+        text-align: center;
+
+        .res-card__content {
+            font-size: 36px;
+            font-weight: normal;
+            letter-spacing: 4px;
+
+            margin: 10px 0px;
+        }
+
+        .res-card__text {
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 4px;
+
+            margin: 18px 0px;
+        }
+
+        .res-card__btn {
+            font-size: 24px;
+            line-height: 2;
+            background-color: #f44336;
+            color: #fff;
+
+            border: none;
+            padding: 8px 60px;
+            border-radius: 4px;
+            opacity: 0.6;
+            margin: 6px 0px 24px 0px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #ccc;
+                color: #000;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.survey {
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 100px;
+    display: none;
+
+
+    .container {
+        max-width: 600px;
+        background-color: #fff;
+        margin: auto;
+        padding: 32px 48px;
+        text-align: center;
+        animation: zoomOut 0.7s;
+
+        .survey__title {
+            font-size: 36px;
+            line-height: 1.5;
+            letter-spacing: 4px;
+            font-weight: 400;
+
+            margin: 10px 0px;
+        }
+
+        .survey__subtitle {
+            line-height: 2;
+            margin: 15px 0px;
+        }
+
+        .survey__get-name {
+            input {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                line-height: 1.5;
+            }
+        }
+
+        .survey__text {
+            line-height: 2;
+            font-style: italic;
+            margin: 15px 0px;
+        }
+
+        .survey__btn {
+            display: flex;
+            justify-content: space-around;
+
+            .survey__btn--left {
+                background-color: green;
+                @extend .btn-classical;
+            }
+
+            .survey__btn--right {
+                background-color: red;
+                @extend .btn-classical;
+            }
+        }
+    }
+}
+
+.app-footer {
+    background-color: #000;
+    padding: 16px 0px;
+    color: #fff;
+    text-align: center;
+
+    .container-fluid {
+        p {
+            margin: 15px 0px;
+            line-height: 2;
+            font-size: 15px;
+
+            a {
+                color: currentColor;
+
+                &:hover {
+                    color: green;
+                }
+            }
+        }
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(0, 0);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+
+    // 0% {
+    //     transform: scale(0, 0);
+    // }
+
+    // 50% {
+    //     transform: scale(0.5, 0.5);
+    // }
+
+    // 100% {
+    //     transform: scale(1, 1);
+    // }
+}

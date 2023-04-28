@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Wedding.css">
+    <title>Wedding Invitation Template</title>
+</head>
+
+<body>
+    <header class="app-header">
+        <h1 class="app-header__human-name">Jane & John</h1>
+        <p class="app-header__title">Are getting married</p>
+        <p class="app-header__time">17.07.2017</p>
+    </header>
+    <section class="sticky-bottom">
+        <div class="container-fluid">
+            <ul class="nav-bottom">
+                <li><a href="">Home</a></li>
+                <li><a href="">Jane & John</a></li>
+                <li><a href="">Wedding</a></li>
+                <li><a href="">RSVP</a></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <section class="introduction">
+            <div class="container">
+                <h1 class="introduction__title">Jane & John</h1>
+                <img src="./assets/images/Wedding/wedding_couple2.jpg" alt="wedding image" class="introduction__img">
+                <p class="introduction__text">
+                    You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo
+                    consequat.
+                </p>
+                <button class="introduction__btn"><a href="#Wedding">Wedding Details</a></button>
+            </div>
+        </section>
+        <section class="flower-card">
+            <h1 class="flower-card__content">You Are Invited</h1>
+            <p class="flower-card__text">Of course..</p>
+        </section>
+        <section id="Wedding" class="wedding">
+            <div class="container">
+                <h1 class="wedding__title">The wedding</h1>
+                <img src="./assets/images/Wedding/wedding_location.jpg" alt="wedding location image"
+                    class="wedding__img">
+                <div class="wedding__time-place">
+                    <div class="wedding__time">
+                        <h3>When</h3>
+                        <p>Wedding Ceremony - 2:00pm</p>
+                        <p>Reception & Dinner - 5:00pm</p>
+                    </div>
+                    <div class="wedding__place">
+                        <h3>Where</h3>
+                        <p>Some place, an address</p>
+                        <p>Some where, some address</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="res-card">
+            <div class="container-fluid">
+                <h1 class="res-card__content">HOPE YOU CAN MAKE IT!</h1>
+                <p class="res-card__text">Kindly Respond By January, 2017</p>
+                <button class="res-card__btn" onclick="openSurvey()">RSVP</button>
+            </div>
+        </section>
+        <section class="survey">
+            <div class="container">
+                <h1 class="survey__title">Can you come ?</h1>
+                <p class="survey__subtitle">We really hope you can make it.</p>
+                <form action="" class="survey__get-name">
+                    <input type="text" placeholder="Name(s)" name="name">
+                </form>
+                <p class="survey__text">Sincerely, John & Jane</p>
+                <div class="survey__btn">
+                    <div class="survey__btn--left" onclick="closeSurvey()">Going</div>
+                    <div class="survey__btn--right" onclick="closeSurvey()">Can't come</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="app-footer">
+        <div class="container-fluid">
+            <p>Powered by <a href="javascript:void(0)">CHN</a></p>
+        </div>
+    </footer>
+</body>
+<script>
+    let openSurvey = () => document.querySelector(".survey").style.display = 'block';
+    let closeSurvey = () => document.querySelector(".survey").style.display = "none";
+</script>
+
+</html>
